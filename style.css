@@ -29,6 +29,8 @@ body {
     text-decoration: none;
     background-color: #383838;
     box-shadow: 15px 15px 80px #555;
+    margin-left: 38.5%;
+    margin-right: 38.5%;
 }
   a.button:hover {
     background-color: #383838;
@@ -39,8 +41,39 @@ body {
 
 /*Stuff below governs the Explore screen*/
 
-#exploreBody {
-    background-image: url("img/exploreHome1.jpg");
+#introduction {
+    background-image: url("https://media.giphy.com/media/un3NNBF4LSJZ6/giphy.gif");
     background-position: bottom center;
+    color: #fff;
+}
 
+.text {
+    font-size: 24px;
+    border-width: 10px;
+    border-style: solid;
+}
+
+#button {
+    margin-top:50px;
+    position: static;
+}
+
+#characterselect {
+    text-align: center;
+}
+
+.character {
+    float: left;
+}
+
+.characterbutton{
+    border: 5px solid #383838;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #383838;
+    box-shadow: 15px 15px 80px #555;
+    position: absolute;
+    margin-left: 9.5%;
 }
