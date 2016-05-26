@@ -18,9 +18,9 @@ var loop = setInterval(function(){
     follower.css({left:xp, top:yp});
     
 }, 30);
-$("#slime").show();
 
 animateDiv("#slime");
+
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
@@ -41,8 +41,8 @@ function animateDiv(myclass){
     });
     
 };
-$("#slime").click(function(){
-   $("#slime").hide().delay(2000);
+$("#slime").click(function() {
+$("#slime").hide().delay(1500).fadeIn();
 
 });
 });//closes doc

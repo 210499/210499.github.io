@@ -105,9 +105,9 @@ body {
 }
 
 #slime {
-width:100px;
-height:100px;
- background-image: url("http://orig08.deviantart.net/d915/f/2012/023/e/6/minecraft_slime_emoticon_by_thetriforcebearer-d4ncbs2.gif");
+width: 275px; 
+height: 350px;
+background-image: url("img/slime1.gif");
 position:fixed;
 }
 
