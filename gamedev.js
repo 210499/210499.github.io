@@ -1,6 +1,10 @@
 $( document ).ready(function(){
 //declare variable
 var score=0;
+$(".b").hide();
+$(".c").hide();
+$(".d").hide();
+
 
 var mouseX = 0, mouseY = 0, limitX = 1305.450-15, limitY = 200-15;
 $(window).mousemove(function(e){
@@ -49,8 +53,12 @@ function animateDiv(myclass){
 };
 $("#slime").click(function() {
 $("#slime").hide().delay(1500).fadeIn();
+
 score++;
 $( "#scoreboard" ).html(score);
+if (score === 3) {
+	$(".b").show();
+};
 });
 
 
