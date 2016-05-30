@@ -1,4 +1,7 @@
 $( document ).ready(function(){
+//declare variable
+var score=0;
+
 var mouseX = 0, mouseY = 0, limitX = 1305.450-15, limitY = 200-15;
 $(window).mousemove(function(e){
   var offset = $('.container').offset();
@@ -20,6 +23,9 @@ var loop = setInterval(function(){
 }, 30);
 
 animateDiv("#slime");
+animateDiv(".b");
+animateDiv(".c");
+animateDiv(".d");
 
 function makeNewPosition(){
     
@@ -43,6 +49,9 @@ function animateDiv(myclass){
 };
 $("#slime").click(function() {
 $("#slime").hide().delay(1500).fadeIn();
-
+score++;
+$( "#scoreboard" ).html(score);
 });
+
+
 });//closes doc
