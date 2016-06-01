@@ -54,16 +54,57 @@ function animateDiv(myclass){
 $("#slime").click(function() {
 $("#slime").hide().delay(1500).fadeIn();
 
+
+
+
+
 score++;
 $( "#scoreboard" ).html(score);
 if (score === 3) {
-	$(".b").show();
-};
+	$(".b").show()};
+	if (score ===6) {
+		$(".c").show()
+	};
+	if (score ===9) {
+		$(".d").show()
+	};
 });
 
-<<<<<<< Updated upstream
+$(".b").click(function() {
+$(".b").hide().delay(1500).fadeIn();
 
-=======
+
+
+
+
+score++;
+$( "#scoreboard" ).html(score);
+	if (score ===6) {
+		$(".c").show()
+	};
+	if (score ===9) {
+		$(".d").show()
+	};
+});
+
+$(".c").click(function() {
+$(".c").hide().delay(1500).fadeIn();
+
+
+
+
+
+score++;
+$( "#scoreboard" ).html(score);
+	
+	if (score ===9) {
+		$(".d").show()
+	};
+});
+
+
+
+
  var obj = document.createElement("audio");
         obj.src="sound/awp.mp3";
         obj.volume=0.10;
@@ -73,5 +114,5 @@ if (score === 3) {
         $( document ).click(function() {
             obj.play();
         });
->>>>>>> Stashed changes
+
 });//closes doc
