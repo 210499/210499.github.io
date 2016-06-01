@@ -61,5 +61,17 @@ if (score === 3) {
 };
 });
 
+<<<<<<< Updated upstream
 
+=======
+ var obj = document.createElement("audio");
+        obj.src="sound/awp.mp3";
+        obj.volume=0.10;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
+        $( document ).click(function() {
+            obj.play();
+        });
+>>>>>>> Stashed changes
 });//closes doc
