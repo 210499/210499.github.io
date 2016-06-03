@@ -4,6 +4,7 @@ var score=0;
 $(".b").hide();
 $(".c").hide();
 $(".d").hide();
+$("#goodslime").hide();
 
 
 var mouseX = 0, mouseY = 0, limitX = 1305.450-15, limitY = 200-15;
@@ -30,6 +31,7 @@ animateDiv("#slime");
 animateDiv(".b");
 animateDiv(".c");
 animateDiv(".d");
+animateDiv("#goodslime");
 
 function makeNewPosition(){
     
@@ -62,6 +64,9 @@ score++;
 $( "#scoreboard" ).html(score);
 if (score === 3) {
 	$(".b").show()};
+	if (score ===5) {
+	$("#goodslime").show()
+};
 	if (score ===6) {
 		$(".c").show()
 	};
@@ -79,10 +84,13 @@ $(".b").hide().delay(1500).fadeIn();
 
 score++;
 $( "#scoreboard" ).html(score);
+	if (score ===5) {
+	$("#goodslime").show()
+};
 	if (score ===6) {
 		$(".c").show()
 	};
-	if (score ===9) {
+		if (score ===9) {
 		$(".d").show()
 	};
 });
@@ -101,6 +109,19 @@ $( "#scoreboard" ).html(score);
 		$(".d").show()
 	};
 });
+
+$(".d").click(function() {
+	$(".d").hide().delay(1500).fadeIn();
+
+
+score++;
+$( "#scoreboard" ).html(score)
+});
+
+$("#goodslime").click(function(){
+   window.location.href="GAMEOVER.html";
+})
+
 
 
 

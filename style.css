@@ -145,3 +145,10 @@ position:fixed;
             border-radius: 5px;
             cursor: pointer;
         }
+
+#goodslime {
+    width: 64px; 
+height: 115px;
+background-image: url("http://stardewvalleywiki.com/mediawiki/images/a/a0/Slime_Ball_Anim.gif");
+position:fixed;
+}
