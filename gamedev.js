@@ -4,7 +4,12 @@ var score=0;
 $(".b").hide();
 $(".c").hide();
 $(".d").hide();
+$(".e").hide();
+$(".f").hide();
 $("#goodslime").hide();
+$("#goodslimetwo").hide();
+$("#goodslimethree").hide();
+
 
 
 var mouseX = 0, mouseY = 0, limitX = 1305.450-15, limitY = 200-15;
@@ -31,7 +36,11 @@ animateDiv("#slime");
 animateDiv(".b");
 animateDiv(".c");
 animateDiv(".d");
+animateDiv(".e");
+animateDiv(".f");
 animateDiv("#goodslime");
+animateDiv("#goodslimetwo");
+animateDiv("#goodslimethree");
 
 function makeNewPosition(){
     
@@ -73,6 +82,18 @@ if (score === 3) {
 	if (score ===9) {
 		$(".d").show()
 	};
+    if (score ===10) {
+		$("#goodslimetwo").show()
+	};
+	if (score ===11) {
+		$("#goodslimethree").show()
+	};
+	if (score ===12) {
+		$(".e").show()
+	};
+	if (score ===15) {
+		$(".f").show()
+	};
 });
 
 $(".b").click(function() {
@@ -93,6 +114,18 @@ $( "#scoreboard" ).html(score);
 		if (score ===9) {
 		$(".d").show()
 	};
+	if (score ===10) {
+		$("#goodslimetwo").show()
+	};
+	if (score ===11) {
+		$("#goodslimethree").show()
+	};
+	if (score ===12) {
+		$(".e").show()
+	};
+	if (score ===15) {
+		$(".f").show()
+	};
 });
 
 $(".c").click(function() {
@@ -104,9 +137,20 @@ $(".c").hide().delay(1500).fadeIn();
 
 score++;
 $( "#scoreboard" ).html(score);
-	
-	if (score ===9) {
+		if (score ===9) {
 		$(".d").show()
+	};
+	if (score ===10) {
+		$("#goodslimetwo").show()
+	};
+	if (score ===11) {
+		$("#goodslimethree").show()
+	};
+	if (score ===12) {
+		$(".e").show()
+	};
+	if (score ===15) {
+		$(".f").show()
 	};
 });
 
@@ -115,12 +159,45 @@ $(".d").click(function() {
 
 
 score++;
-$( "#scoreboard" ).html(score)
+$( "#scoreboard" ).html(score);
+if (score ===10) {
+		$("#goodslimetwo").show()
+	};
+	if (score ===11) {
+		$("#goodslimethree").show()
+	};
+	if (score ===12) {
+		$(".e").show()
+	};
+	if (score ===15) {
+		$(".f").show()
+	};
+});
+
+$(".e").click(function() {
+	$(".d").hide().delay(1500).fadeIn();
+
+
+score++;
+$( "#scoreboard" ).html(score);
+	if (score ===15) {
+		$(".f").show()
+	};
 });
 
 $("#goodslime").click(function(){
    window.location.href="GAMEOVER.html";
-})
+});
+
+$("#goodslimetwo").click(function(){
+   window.location.href="GAMEOVER.html";
+});
+
+$("#goodslimethree").click(function(){
+   window.location.href="GAMEOVER.html";
+});
+
+
 
 
 
